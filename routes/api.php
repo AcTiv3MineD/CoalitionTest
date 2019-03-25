@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::group( ['namespace' => 'Api' ], function( ) {
+	Route::group( [ 'prefix' => '/v1', 'namespace' => 'V1' ], function ( ) {	
+        Route::group( [ 'prefix' => '/products', 'namespace' => 'Products' ], function( ) {
+            Route::post( '/', 'MainController@create' );
+            Route::post( '/filter', 'MainController@filter' );
+            Route::put( '/', 'MainController@update' );
+        } );
+    } );
+} );

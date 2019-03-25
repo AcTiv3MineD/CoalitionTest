@@ -1,14 +1,9 @@
+// Import Bootstrap source files
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+/* Import Bootstrap Vue Styles */
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
 
-// Variables
-@import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+//BOOTSTRAP RELATED THINGS
+@import "bootstrap/variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/bootswatch";

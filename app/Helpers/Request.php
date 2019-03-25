@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Helpers;
 
 use App\Helpers\Response;
 
